@@ -6,6 +6,7 @@ import sunriseAndSunsetData from "./sunrise-sunset.json";
 import useWeatherApi from "./useWeatherApi";
 import WeatherSetting from "./WeatherSetting";
 import { findLocation } from "./utils";
+import dayjs from "dayjs";
 
 const theme = {
   light: {
@@ -42,7 +43,7 @@ const getMoment = (locationName) => {
 
   if (!location) return null;
 
-  const now = new Date();
+  const now = dayjs();
 
   const nowDate = Intl.DateTimeFormat("zh-TW", {
     year: "numeric",
@@ -54,13 +55,13 @@ const getMoment = (locationName) => {
 
   const locationDate = location.time.find((time) => time.dataTime === nowDate);
 
-  const sunriseTimestamp = new Date(
+  const sunriseTimestamp = dayjs(
     `${locationDate.dataTime} ${locationDate.sunrise}`
-  ).getTime();
-  const sunsetTimestamp = new Date(
+  ).unix();
+  const sunsetTimestamp = dayjs(
     `${locationDate.dataTime} ${locationDate.sunset}`
-  ).getTime();
-  const nowTimestamp = now.getTime();
+  ).unix();
+  const nowTimestamp = now.unix();
 
   return sunriseTimestamp <= nowTimestamp && nowTimestamp <= sunsetTimestamp
     ? "day"
