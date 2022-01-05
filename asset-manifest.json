@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/iTHelp_weather-app/static/css/main.84cba7ac.css",
-    "main.js": "/iTHelp_weather-app/static/js/main.5af8955b.js",
+    "main.js": "/iTHelp_weather-app/static/js/main.85ea5584.js",
     "static/js/787.afc037d9.chunk.js": "/iTHelp_weather-app/static/js/787.afc037d9.chunk.js",
     "service-worker.js": "/iTHelp_weather-app/service-worker.js",
     "static/media/day-snowing.svg": "/iTHelp_weather-app/static/media/day-snowing.ba1cbc7669611ee425e874e171d02e70.svg",
@@ -25,11 +25,11 @@
     "index.html": "/iTHelp_weather-app/index.html",
     "static/media/night-clear.svg": "/iTHelp_weather-app/static/media/night-clear.94eb7d671bc6d4dec6aa0b47038954df.svg",
     "main.84cba7ac.css.map": "/iTHelp_weather-app/static/css/main.84cba7ac.css.map",
-    "main.5af8955b.js.map": "/iTHelp_weather-app/static/js/main.5af8955b.js.map",
+    "main.85ea5584.js.map": "/iTHelp_weather-app/static/js/main.85ea5584.js.map",
     "787.afc037d9.chunk.js.map": "/iTHelp_weather-app/static/js/787.afc037d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84cba7ac.css",
-    "static/js/main.5af8955b.js"
+    "static/js/main.85ea5584.js"
   ]
 }
